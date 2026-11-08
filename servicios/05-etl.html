@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="es" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Datos que Llegan Solos y Cuadran · AI Way</title>
+<meta name="description" content="ETL incremental, idempotente y reanudable: perfilado de todas las tablas, capas bronce-plata-oro, QA que bloquea y tableros con cobertura por KPI.">
+<link rel="canonical" href="https://andresvama.github.io/servicios/05-etl.html">
+<meta name="theme-color" content="#f6f0e3">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_MX">
+<meta property="og:site_name" content="AI Way">
+<meta property="og:title" content="Datos que Llegan Solos y Cuadran · AI Way">
+<meta property="og:description" content="ETL incremental, idempotente y reanudable: perfilado de todas las tablas, capas bronce-plata-oro, QA que bloquea y tableros con cobertura por KPI.">
+<meta property="og:image" content="https://andresvama.github.io/assets/logo/og_image.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="../assets/logo/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="../assets/logo/favicon_32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="../assets/logo/apple_touch_180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&amp;family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&amp;family=IBM+Plex+Serif:ital,wght@0,400;0,500;1,400;1,500&amp;display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&amp;family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&amp;family=IBM+Plex+Serif:ital,wght@0,400;0,500;1,400;1,500&amp;display=swap">
+<link rel="stylesheet" href="../assets/css/tokens.css">
+<link rel="stylesheet" href="../assets/css/site.css">
+<script>try{var t=localStorage.getItem('aiway-tema');if(t==='dark'||t==='light')document.documentElement.setAttribute('data-theme',t)}catch(e){}</script>
+</head>
+<body data-raiz="../">
+<a class="saltar" href="#contenido">Saltar al contenido</a>
+<header class="cab">
+<div class="wrap">
+  <a class="marca" href="../index.html" aria-label="AI Way, inicio"><img class="logo-cla" src="../assets/logo/logo.svg" alt="AI Way" width="132" height="30"><img class="logo-osc" src="../assets/logo/logo_oscuro.svg" alt="AI Way" width="132" height="30"></a>
+  <button class="btn-ico menu-btn" id="menu-btn" type="button" aria-expanded="false" aria-controls="nav" aria-label="Abrir menú"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+  <nav class="nav" id="nav" aria-label="Principal"><ul><li><a href="../index.html#servicios">Servicios</a></li><li><a href="../index.html#casos">Casos</a></li><li><a href="../index.html#metodo">Método</a></li><li><a href="../laboratorio.html">Laboratorio</a></li><li><a href="../index.html#sobre-mi">Sobre mí</a></li><li><a href="../index.html#contacto">Contacto</a></li></ul></nav>
+  <button class="btn-ico" id="tema" type="button" aria-pressed="false" aria-label="Cambiar a modo oscuro"><svg class="ico-luna" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4 8 8 0 1 0 20 14.5z"/></svg><svg class="ico-sol" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg></button>
+</div>
+</header>
+<main id="contenido">
+<div class="wrap">
+<p class="migas"><a href="../index.html">Inicio</a> / <a href="../index.html#servicios">Servicios</a> / Nº 05</p>
+<header class="cab-svc">
+  <p class="kicker">Servicio · Nº 05</p>
+  <h1>Datos que Llegan Solos y Cuadran</h1>
+  <p class="lead">Pipelines que traen tus datos de APIs, bases, archivos y sitios web cada día, sin duplicar, con alertas cuando algo cambia y con cifras que se pueden auditar en el tablero.</p>
+  <div class="btns"><a class="btn btn-1" href="mailto:avm.48p1@gmail.com?subject=Diagn%C3%B3stico%20de%20datos">Agenda un diagnóstico</a><a class="btn btn-2" href="#demo">Ver la demo <span class="flecha">↓</span></a></div>
+  <ul class="indice" aria-label="En esta página"><li><a href="#problema">Problema</a></li><li><a href="#enfoque">Enfoque</a></li><li><a href="#demo">Resultados de la demo</a></li><li><a href="#limites">Límites</a></li><li><a href="#aplicaciones">Aplicaciones</a></li><li><a href="#paquetes">Paquetes</a></li><li><a href="#preguntas">Preguntas</a></li><li><a href="#descarga">Descarga</a></li></ul>
+</header>
+</div>
+<section class="sec" id="problema" aria-labelledby="t-problema"><div class="wrap"><div class="dos-col">
+  <div><p class="kicker">01 · El problema</p><h2 id="t-problema">Lo que pasa hoy</h2></div>
+  <div class="prosa"><p>Los datos de la empresa viven en APIs de proveedores, bases Oracle o SQL Server, hojas de cálculo y sitios web sin API. Alguien los copia a mano, los cruces se rompen y el tablero muestra una cifra que nadie puede reproducir.</p><p>Cuando el dato llega tarde se pierde la ventana para actuar. Hace falta <strong>ingesta automática, incremental y reanudable</strong>, un modelo de datos documentado y un QA que impida publicar cifras falsas.</p></div>
+</div></div></section>
+<section class="sec" id="enfoque" aria-labelledby="t-enfoque"><div class="wrap">
+  <div class="sec-cab"><p class="kicker">02 · Enfoque</p><h2 id="t-enfoque">Cómo trabajamos</h2></div>
+  <ol class="pasos-lista"><li><strong>Inventario de fuentes y KPIs</strong> con su definición exacta: qué se divide entre qué.</li><li><strong>Perfilado de cada tabla</strong> antes de modelar: una muestra de 100 filas no basta.</li><li><strong>Ingesta incremental:</strong> marca de agua, ventana con solape, deduplicación por clave y hash, control de errores 429 y registro de estado.</li><li><strong>Capas medallón:</strong> bronce sin tocar, plata deduplicada y tipada, oro para el negocio.</li><li><strong>Modelo semántico:</strong> razones como cociente de agregados (nunca promedio de razones) y «sin dato» como nulo, no como cero.</li><li><strong>QA que bloquea y alertas</strong>, con verificación de fórmulas contra el diccionario del cliente.</li></ol>
+</div></section>
+<section class="sec" id="demo" aria-labelledby="t-demo"><div class="wrap">
+  <div class="sec-cab"><p class="kicker">03 · Resultados de la demo</p><h2 id="t-demo">Medido contra una verdad conocida</h2><p class="resumen">Cuatro fuentes simuladas y caóticas (API paginada que responde 429, base contable, CSV diarios y un sitio sin API) se ingieren durante 180 corridas diarias con 7 defectos plantados. Capas medallón en DuckDB/Parquet, diccionario por perfilado, QA que bloquea y tablero con cobertura por KPI.</p></div>
+  <div class="aviso-demo"><span class="sello sello-sint">Datos ilustrativos (sintéticos)</span><span>Escenario: <strong>Transportes Altiplano (ficticia)</strong> · verdad del simulador, no resultados de un cliente.</span></div>
+  <div class="kpis"><div class="kpi"><div class="v">7 de 7</div><span class="l">defectos plantados que encontró el perfilado</span><span class="d">una muestra de 100 filas: 3 de 7</span></div><div class="kpi"><div class="v">0</div><span class="l">duplicados en la capa plata</span><span class="d">76 520 repeticiones eliminadas</span></div><div class="kpi"><div class="v">0</div><span class="l">registros perdidos tras interrumpir el proceso</span><span class="d">idempotencia comprobada por hash: sí</span></div><div class="kpi"><div class="v">~40×</div><span class="l">más rápida la corrida incremental (piso conservador)</span><span class="d">0.07 s contra 3.2 s de una carga completa</span></div></div>
+  <figure class="fig papel">
+  <figcaption><div class="ft-cab"><span class="fk">Fig. 3 · interactiva</span></div><p class="ft">Contar filas duplicaba los accidentes; dividir agregados corrige el ingreso por km</p></figcaption>
+  <div class="plot" data-fig="../assets/fig/05_fig03_ingenuo_vs_correcto.json" style="--h:520px;--hm:520px" data-movil='{&quot;margin&quot;: {&quot;l&quot;: 110}}'><div class="cargando">Cargando gráfica interactiva…</div></div>
+  <p class="fuente">Fuente: simulación propia, 180 corridas diarias · Datos ilustrativos (sintéticos) · AI Way</p>
+</figure><figure class="fig papel">
+  <figcaption><div class="ft-cab"><span class="fk">Fig. 4 · interactiva</span></div><p class="ft">180 corridas, 0 registros perdidos</p></figcaption>
+  <div class="plot" data-fig="../assets/fig/05_fig04_corridas.json" style="--h:600px;--hm:560px"><div class="cargando">Cargando gráfica interactiva…</div></div>
+  <p class="fuente">Fuente: simulación propia, 180 corridas diarias · Datos ilustrativos (sintéticos) · AI Way</p>
+</figure>
+  
+  <div class="galeria"><figure class="fig papel">
+  <a class="zoom" href="../assets/img/05/fig01_arquitectura.png"><img src="../assets/img/05/fig01_arquitectura.png" width="1600" height="900" loading="lazy" decoding="async" alt="Arquitectura del pipeline: cuatro fuentes, capas bronce, plata y oro, QA que bloquea y tablero."></a>
+  <figcaption>Imagen estática de la demo · toca para verla a tamaño completo · Datos ilustrativos (sintéticos)</figcaption>
+</figure><figure class="fig papel">
+  <a class="zoom" href="../assets/img/05/fig02_perfilado.png"><img src="../assets/img/05/fig02_perfilado.png" width="1600" height="900" loading="lazy" decoding="async" alt="Perfilado de todas las filas contra una muestra de 100: el perfilado encuentra 7 de 7 defectos y la muestra, 3 de 7."></a>
+  <figcaption>Imagen estática de la demo · toca para verla a tamaño completo · Datos ilustrativos (sintéticos)</figcaption>
+</figure><figure class="fig papel ancha">
+  <a class="zoom" href="../assets/img/05/fig05_tablero.png"><img src="../assets/img/05/fig05_tablero.png" width="1600" height="900" loading="lazy" decoding="async" alt="Tablero gerencial de la demo con indicador de cobertura por KPI."></a>
+  <figcaption>Imagen estática de la demo · toca para verla a tamaño completo · Datos ilustrativos (sintéticos)</figcaption>
+</figure></div>
+  <h3>Lectura honesta</h3>
+  <ul class="lectura"><li><strong>El error de un reporte ingenuo</strong> con los mismos datos va de −60 % a +99 % según el KPI (contar filas en vez de eventos, promediar razones, tratar el sensor vacío como cero).</li><li><strong>Sin dato no es cero:</strong> 100 % de las 436 celdas sin dato quedan como nulo; la versión ingenua las llena de ceros.</li><li><strong>Alertas de tarifa:</strong> 6 de 6, el mismo día y sin falsas alarmas; comparar el hash de la página completa habría disparado 5,340 alertas.</li><li><strong>La ventana de solape importa:</strong> sin ella se habrían perdido o quedado desactualizados 1,193 registros.</li><li>Todo corre en local (DuckDB/Parquet) y los tiempos son de laptop; el diseño se traslada a Fabric o BigQuery.</li></ul>
+  
+</div></section>
+<section class="sec" id="limites" aria-labelledby="t-limites"><div class="wrap">
+  <div class="sec-cab"><p class="kicker">04 · Límites declarados</p><h2 id="t-limites">Lo que no prometemos</h2></div>
+  <ul class="limites"><li>Los scrapers dependen del HTML de terceros: requieren mantenimiento y revisión de términos de uso.</li><li>La calidad del dato de origen no se arregla en el pipeline; se mide y se reporta.</li><li>En el caso de BI de referencia se declaró cobertura baja en algunos KPI.</li><li>No se manejan credenciales del cliente en código: van en el gestor de secretos.</li><li>El tablero de la demo es HTML estático; en un cliente iría en Power BI, Looker o similar.</li></ul>
+</div></section>
+<section class="sec" id="aplicaciones" aria-labelledby="t-apl"><div class="wrap">
+  <div class="sec-cab"><p class="kicker">05 · Aplicaciones de negocio</p><h2 id="t-apl">Qué decisiones habilita un dato que llega solo</h2><p>Ejemplos de decisiones que este servicio ayuda a tomar; el alcance se define en el diagnóstico.</p></div>
+  <div class="apl-rejilla"><article class="apl"><p class="apl-area">Ventas e ingresos</p><h3>¿Cuánto vendimos ayer por región, sin esperar al lunes?</h3><p>Ingesta incremental diaria de API, base y archivos a bronce, plata y oro, con KPI listos para el tablero.</p><p class="apl-dec"><span aria-hidden="true">→</span> Corregir el rumbo comercial con los datos del día anterior.</p></article><article class="apl"><p class="apl-area">Marketing</p><h3>¿Cuánto rinde cada canal si los datos viven en cinco lados?</h3><p>Unificamos las fuentes en un modelo con definiciones exactas: cocientes de agregados, no promedios de razones.</p><p class="apl-dec"><span aria-hidden="true">→</span> Mover inversión entre canales con una sola versión de la cifra.</p></article><article class="apl"><p class="apl-area">Operación y costos</p><h3>¿Cuántas horas se van en armar el reporte a mano?</h3><p>Automatizamos la ingesta con marca de agua y solape; se reanuda sola y correr dos veces da lo mismo.</p><p class="apl-dec"><span aria-hidden="true">→</span> Liberar al equipo del copiado para que analice y decida.</p></article><article class="apl"><p class="apl-area">Riesgo y reputación</p><h3>¿Qué cifra del tablero está mal y nadie lo ha notado?</h3><p>QA de doble camino, cobertura por KPI y «ausencia no es cero»: si una cifra no cuadra, no se publica.</p><p class="apl-dec"><span aria-hidden="true">→</span> Presentar a la dirección solo cifras verificadas.</p></article><article class="apl"><p class="apl-area">Dirección y estrategia</p><h3>¿Qué tan sanos están los datos antes de invertir en BI?</h3><p>Perfilamos todas las filas de todas las tablas: tipos, % poblado, rangos, columnas vacías o constantes.</p><p class="apl-dec"><span aria-hidden="true">→</span> Priorizar qué fuentes arreglar antes de construir tableros.</p></article><article class="apl"><p class="apl-area">Precios y regulación</p><h3>¿Un competidor o un regulador cambió algo en su sitio?</h3><p>Scrapers vigilan sitios sin API y alertan por Telegram, Google Chat o correo cuando cambia una tarifa o norma.</p><p class="apl-dec"><span aria-hidden="true">→</span> Reaccionar a un cambio de tarifa o de norma el mismo día.</p></article></div>
+</div></section>
+<section class="sec" id="paquetes" aria-labelledby="t-paquetes"><div class="wrap">
+  <div class="sec-cab"><p class="kicker">06 · Paquetes</p><h2 id="t-paquetes">Tres formas de empezar</h2></div>
+  <div class="paquetes"><article class="paq"><span class="n">Nº 01</span><h3>Básico</h3><p>Auditoría de datos: diccionario por perfilado de hasta 30 tablas, mapa de fuentes y lista priorizada de problemas de calidad; o una fuente automatizada con alertas.</p><p class="dur">Duración típica: 1 a 2 semanas</p></article><article class="paq dest"><span class="n">Nº 02</span><h3>Pro</h3><p>Hasta 6 fuentes con ingesta incremental, capas bronce-plata-oro, QA automático, un tablero gerencial y alertas.</p><p class="dur">Duración típica: 4 a 6 semanas</p></article><article class="paq"><span class="n">Nº 03</span><h3>Enterprise</h3><p>Plataforma de BI completa (varios tableros, modelo semántico de cientos de medidas, seguridad por roles), monitoreo de 20+ fuentes web, runbook y soporte.</p><p class="dur">Duración típica: 8 a 12 semanas + soporte</p></article></div>
+  <p class="nota-precios">Sin precios publicados: cada propuesta se cotiza tras un diagnóstico de alcance.</p>
+</div></section>
+<section class="sec" id="preguntas" aria-labelledby="t-faq"><div class="wrap">
+  <div class="sec-cab"><p class="kicker">07 · Preguntas frecuentes</p><h2 id="t-faq">Lo que suelen preguntar</h2></div>
+  <div class="faq"><details><summary>¿Trabajan con mi nube?</summary><p>Sí: Fabric/Azure, GCP o local; también sin nube, con DuckDB.</p></details><details><summary>¿Qué pasa si una fuente cambia?</summary><p>El pipeline detecta el cambio de esquema o la caída y alerta; el runbook dice cómo corregir.</p></details><details><summary>¿Es legal hacer scraping?</summary><p>Se usan fuentes públicas y se revisan los términos de servicio; preferimos la API oficial cuando existe.</p></details><details><summary>¿Quién lo opera después?</summary><p>Se entrega documentado para su equipo o se ofrece la operación.</p></details></div>
+</div></section>
+<section class="sec" id="descarga" aria-labelledby="t-descarga"><div class="wrap">
+  <div class="sec-cab"><p class="kicker">08 · Descarga</p><h2 id="t-descarga">Llévate la demo</h2></div>
+  <div class="descarga"><p><strong>Presentación de la demo (PDF, 1.6 MB).</strong> El caso completo: problema, método, resultados contra criterio y límites declarados.</p><a class="btn btn-1" href="../assets/pdf/05_etl_demo.pdf" download>Descargar PDF</a></div>
+</div></section>
+<section class="sec" aria-labelledby="t-cta"><div class="wrap">
+  <div class="contacto"><p class="kicker">Siguiente paso</p><h2 id="t-cta">¿Lo medimos con tus datos?</h2>
+  <p>En una llamada de 30 minutos revisamos si se puede, cómo lo mediríamos y qué no te podemos prometer.</p>
+  <div class="btns"><a class="btn btn-1" href="mailto:avm.48p1@gmail.com?subject=Diagn%C3%B3stico%20de%20datos">Agenda un diagnóstico</a><a class="btn btn-2" href="../index.html#servicios">Ver otros servicios</a></div></div>
+  <p class="kicker" style="margin-top:40px">Otros servicios</p>
+  <ul class="otros"><li><a href="01-social-listening.html">Nº 01 · Escucha digital</a></li><li><a href="02-forecasting.html">Nº 02 · Pronósticos</a></li><li><a href="03-causalidad.html">Nº 03 · Impacto de campañas</a></li><li><a href="04-comunidades.html">Nº 04 · Comunidades</a></li><li><a href="06-automatizacion-ia.html">Nº 06 · Automatización con IA</a></li><li><a href="07-chatbots-rag-agentes.html">Nº 07 · RAG y agentes</a></li><li><a href="08-ml-dl-medida.html">Nº 08 · Modelos a medida</a></li><li><a href="09-auditoria-rescate.html">Nº 09 · Auditoría y rescate</a></li><li><a href="10-formacion.html">Nº 10 · Formación</a></li></ul>
+</div></section>
+</main>
+<footer class="pie">
+<div class="wrap">
+  <div><img src="../assets/logo/isotipo.svg" alt="" width="28" height="28" class="logo-cla"><img src="../assets/logo/isotipo_oscuro.svg" alt="" width="28" height="28" class="logo-osc">
+    <p style="margin-top:12px"><strong>AI Way</strong> · ciencia de datos con rigor de físico.</p>
+    <p class="apagado">Validación honesta, límites declarados y cifras que resisten una auditoría.</p></div>
+  <div><p class="kicker">Servicios</p><ul><li><a href="../servicios/01-social-listening.html">Escucha digital</a></li><li><a href="../servicios/02-forecasting.html">Pronósticos</a></li><li><a href="../servicios/03-causalidad.html">Impacto de campañas</a></li><li><a href="../servicios/04-comunidades.html">Comunidades</a></li><li><a href="../servicios/05-etl.html">ETL y BI</a></li><li><a href="../servicios/06-automatizacion-ia.html">Automatización con IA</a></li><li><a href="../servicios/07-chatbots-rag-agentes.html">RAG y agentes</a></li><li><a href="../servicios/08-ml-dl-medida.html">Modelos a medida</a></li><li><a href="../servicios/09-auditoria-rescate.html">Auditoría y rescate</a></li><li><a href="../servicios/10-formacion.html">Formación</a></li></ul></div>
+  <div><p class="kicker">Sitio</p><ul><li><a href="../index.html#casos">Casos</a></li><li><a href="../index.html#metodo">Método</a></li><li><a href="../laboratorio.html">Laboratorio</a></li><li><a href="../index.html#sobre-mi">Sobre mí</a></li><li><a href="../index.html#contacto">Contacto</a></li><li><a href="mailto:avm.48p1@gmail.com">avm.48p1@gmail.com</a></li><li><a href="https://www.linkedin.com/in/andrés-vázquez-macías-727278242" rel="me noopener">LinkedIn</a></li><li><a href="https://github.com/AndresVAMA" rel="me noopener">GitHub</a></li></ul></div>
+  <p class="legal">© 2026 AI Way · Andrés Vázquez Macías · Ciudad de México. Las demos usan datos ilustrativos (sintéticos) y empresas ficticias; los casos reales se describen por ramo, sin nombres de clientes.</p>
+</div>
+</footer>
+<script src="../assets/js/site.js" defer></script>
+</body>
+</html>

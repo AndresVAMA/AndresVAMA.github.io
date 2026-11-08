@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /_build/
+Disallow: /_datos/
+Sitemap: https://andresvama.github.io/sitemap.xml

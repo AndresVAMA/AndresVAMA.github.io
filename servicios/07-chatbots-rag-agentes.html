@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="es" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Asistentes que Citan sus Fuentes · AI Way</title>
+<meta name="description" content="Asistentes RAG y agentes de IA medidos: recuperación con recall@k, citas al documento correcto, abstención, guardrails contra inyecciones y aprobación humana.">
+<link rel="canonical" href="https://andresvama.github.io/servicios/07-chatbots-rag-agentes.html">
+<meta name="theme-color" content="#f6f0e3">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_MX">
+<meta property="og:site_name" content="AI Way">
+<meta property="og:title" content="Asistentes que Citan sus Fuentes · AI Way">
+<meta property="og:description" content="Asistentes RAG y agentes de IA medidos: recuperación con recall@k, citas al documento correcto, abstención, guardrails contra inyecciones y aprobación humana.">
+<meta property="og:image" content="https://andresvama.github.io/assets/logo/og_image.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="../assets/logo/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="../assets/logo/favicon_32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="../assets/logo/apple_touch_180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&amp;family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&amp;family=IBM+Plex+Serif:ital,wght@0,400;0,500;1,400;1,500&amp;display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&amp;family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&amp;family=IBM+Plex+Serif:ital,wght@0,400;0,500;1,400;1,500&amp;display=swap">
+<link rel="stylesheet" href="../assets/css/tokens.css">
+<link rel="stylesheet" href="../assets/css/site.css">
+<script>try{var t=localStorage.getItem('aiway-tema');if(t==='dark'||t==='light')document.documentElement.setAttribute('data-theme',t)}catch(e){}</script>
+</head>
+<body data-raiz="../">
+<a class="saltar" href="#contenido">Saltar al contenido</a>
+<header class="cab">
+<div class="wrap">
+  <a class="marca" href="../index.html" aria-label="AI Way, inicio"><img class="logo-cla" src="../assets/logo/logo.svg" alt="AI Way" width="132" height="30"><img class="logo-osc" src="../assets/logo/logo_oscuro.svg" alt="AI Way" width="132" height="30"></a>
+  <button class="btn-ico menu-btn" id="menu-btn" type="button" aria-expanded="false" aria-controls="nav" aria-label="Abrir menú"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+  <nav class="nav" id="nav" aria-label="Principal"><ul><li><a href="../index.html#servicios">Servicios</a></li><li><a href="../index.html#casos">Casos</a></li><li><a href="../index.html#metodo">Método</a></li><li><a href="../laboratorio.html">Laboratorio</a></li><li><a href="../index.html#sobre-mi">Sobre mí</a></li><li><a href="../index.html#contacto">Contacto</a></li></ul></nav>
+  <button class="btn-ico" id="tema" type="button" aria-pressed="false" aria-label="Cambiar a modo oscuro"><svg class="ico-luna" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4 8 8 0 1 0 20 14.5z"/></svg><svg class="ico-sol" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg></button>
+</div>
+</header>
+<main id="contenido">
+<div class="wrap">
+<p class="migas"><a href="../index.html">Inicio</a> / <a href="../index.html#servicios">Servicios</a> / Nº 07</p>
+<header class="cab-svc">
+  <p class="kicker">Servicio · Nº 07</p>
+  <h1>Asistentes que Citan sus Fuentes</h1>
+  <p class="lead">Chatbots y agentes que responden con los documentos de tu empresa, citan de dónde sale cada respuesta, dicen «no sé» cuando no está y piden permiso antes de actuar.</p>
+  <div class="btns"><a class="btn btn-1" href="mailto:avm.48p1@gmail.com?subject=Diagn%C3%B3stico%20de%20datos">Agenda un diagnóstico</a><a class="btn btn-2" href="#demo">Ver la demo <span class="flecha">↓</span></a></div>
+  <ul class="indice" aria-label="En esta página"><li><a href="#problema">Problema</a></li><li><a href="#enfoque">Enfoque</a></li><li><a href="#demo">Resultados de la demo</a></li><li><a href="#limites">Límites</a></li><li><a href="#aplicaciones">Aplicaciones</a></li><li><a href="#paquetes">Paquetes</a></li><li><a href="#preguntas">Preguntas</a></li><li><a href="#descarga">Descarga</a></li></ul>
+</header>
+</div>
+<section class="sec" id="problema" aria-labelledby="t-problema"><div class="wrap"><div class="dos-col">
+  <div><p class="kicker">01 · El problema</p><h2 id="t-problema">Lo que pasa hoy</h2></div>
+  <div class="prosa"><p>Las empresas quieren «un ChatGPT con nuestros documentos» y obtienen un prototipo que responde con seguridad cosas falsas, no dice de qué documento sale, mezcla versiones viejas de una política y, si se le dan herramientas, actúa sin control.</p><p>Nadie midió cuántas veces encuentra el documento correcto ni cuántas veces inventa. Hace falta un asistente <strong>medido</strong> (recuperación y fidelidad), <strong>trazable</strong> (cada paso del agente registrado) y <strong>gobernado</strong> (aprobación humana antes de acciones con efecto).</p></div>
+</div></div></section>
+<section class="sec" id="enfoque" aria-labelledby="t-enfoque"><div class="wrap">
+  <div class="sec-cab"><p class="kicker">02 · Enfoque</p><h2 id="t-enfoque">Cómo trabajamos</h2></div>
+  <ol class="pasos-lista"><li><strong>Corpus y permisos:</strong> inventario de documentos, versiones vigentes y quién puede ver qué.</li><li><strong>Set de evaluación antes de construir:</strong> preguntas con respuesta y fuente conocidas, más preguntas sin respuesta.</li><li><strong>Recuperación:</strong> línea base BM25, búsqueda densa, híbrida y re-ranking; se elige por recall@k medido.</li><li><strong>Generación con citas</strong> y regla de abstención; la fidelidad se mide.</li><li><strong>Agente:</strong> herramientas con contrato, planificador acotado, trazas, límites de pasos y coste, y aprobación humana en acciones con efecto.</li><li><strong>Guardrails y pruebas adversarias:</strong> preguntas fuera de alcance e instrucciones inyectadas en documentos.</li></ol>
+</div></section>
+<section class="sec" id="demo" aria-labelledby="t-demo"><div class="wrap">
+  <div class="sec-cab"><p class="kicker">03 · Resultados de la demo</p><h2 id="t-demo">Medido contra una verdad conocida</h2><p class="resumen">Asistente RAG y agente con herramientas sobre 80 documentos sintéticos (627 páginas) con 300 hechos plantados y 200 preguntas de evaluación. Modo sin llave: la recuperación es real y local; la generación es extractiva, con juez local y planificador por reglas, rotulados como simulados.</p></div>
+  <div class="aviso-demo"><span class="sello sello-sint">Datos ilustrativos (sintéticos)</span><span>Escenario: <strong>Grupo Hotelero Brisa Austral (ficticio)</strong> · verdad del simulador, no resultados de un cliente.</span><span class="sello sello-sim">simulado (modo demostración sin llave)</span><span>en las cifras que dependen de un LLM</span></div>
+  <div class="kpis"><div class="kpi"><div class="v">97 %</div><span class="l">de las respuestas cita el documento correcto</span><span class="d">responde copiando de la fuente (generación extractiva)</span><span class="sello sello-sim">simulado (modo demostración sin llave)</span></div><div class="kpi"><div class="v">95 %</div><span class="l">recall@5 con búsqueda híbrida + re-ranker</span><span class="d">BM25 solo: 94 % · la diferencia es pequeña</span></div><div class="kpi"><div class="v">85 %</div><span class="l">aciertan la versión vigente de una norma</span><span class="d">sin filtro de vigencia: 25 %</span></div><div class="kpi"><div class="v">8 de 8</div><span class="l">acciones con efecto pidieron aprobación</span><span class="d">0 tickets escritos sin aprobación</span></div></div>
+  <figure class="fig papel">
+  <figcaption><div class="ft-cab"><span class="fk">Fig. 2 · interactiva</span></div><p class="ft">La búsqueda híbrida encuentra la fuente en el top 5 el 95 % de las veces</p></figcaption>
+  <div class="plot" data-fig="../assets/fig/07_fig02_recall_k.json" style="--h:560px;--hm:500px"><div class="cargando">Cargando gráfica interactiva…</div></div>
+  <p class="fuente">Fuente: corpus sintético, 80 documentos y 200 preguntas · Datos ilustrativos (sintéticos) · AI Way</p>
+</figure><figure class="fig papel">
+  <figcaption><div class="ft-cab"><span class="fk">Fig. 4 · interactiva</span></div><p class="ft">Se abstiene en 44 % de las preguntas sin respuesta</p></figcaption>
+  <div class="plot" data-fig="../assets/fig/07_fig04_abstencion.json" style="--h:620px;--hm:580px"><div class="cargando">Cargando gráfica interactiva…</div></div>
+  <p class="fuente">Fuente: corpus sintético, 80 documentos y 200 preguntas · Datos ilustrativos (sintéticos) · AI Way</p>
+</figure>
+  <div class="demo-link"><a class="btn btn-2" href="../demos/07-chat.html">Probar el chat de demostración <span class="flecha">→</span></a><p>Respuestas precalculadas sobre el corpus sintético; no hay un modelo en vivo.</p></div>
+  <div class="galeria"><figure class="fig papel">
+  <a class="zoom" href="../assets/img/07/fig01_arquitectura.png"><img src="../assets/img/07/fig01_arquitectura.png" width="1600" height="900" loading="lazy" decoding="async" alt="Arquitectura del asistente: ingesta de PDF, recuperación híbrida con re-ranker, generación con citas, abstención y agente con herramientas y aprobación humana."></a>
+  <figcaption>Imagen estática de la demo · toca para verla a tamaño completo · Datos ilustrativos (sintéticos)</figcaption>
+</figure><figure class="fig papel">
+  <a class="zoom" href="../assets/img/07/fig05_traza_agente.png"><img src="../assets/img/07/fig05_traza_agente.png" width="1600" height="900" loading="lazy" decoding="async" alt="Traza de una tarea del agente: cada paso, cada herramienta y la aprobación humana antes de crear un ticket."></a>
+  <figcaption>Imagen estática de la demo · toca para verla a tamaño completo · Datos ilustrativos (sintéticos)</figcaption>
+</figure><figure class="fig papel ancha">
+  <a class="zoom" href="../assets/img/07/fig06_tablero_agente.png"><img src="../assets/img/07/fig06_tablero_agente.png" width="1600" height="900" loading="lazy" decoding="async" alt="Tablero del agente: éxito por tipo de tarea, secuencia correcta, pasos y coste estimado por tarea."></a>
+  <figcaption>Imagen estática de la demo · toca para verla a tamaño completo · Datos ilustrativos (sintéticos)</figcaption>
+</figure></div>
+  <h3>Lectura honesta</h3>
+  <ul class="lectura"><li><strong>El re-ranker gana poco y lo decimos:</strong> +1.4 pp en recall@5 sobre BM25, con un intervalo que toca cero (0.0 pp a 3.6 pp). Se nota más en el primer lugar: recall@1 de 70 % contra 66 %.</li><li><strong>La fidelidad no es el titular:</strong> en modo extractivo el asistente copia oraciones del documento, así que es alta por construcción. El error real es citar una oración vecina; con un LLM real se vuelve a medir.</li><li><strong>Abstención:</strong> dice «no sé» en 44 % de las preguntas sin respuesta: 90 % cuando el tema no existe, pero solo 13 % cuando hay un hecho vecino. Se abstiene por error en 7.5 % de las que sí tienen respuesta.</li><li><strong>Inyecciones en documentos</strong> neutralizadas: 100 % con guardrail, 7 % sin él.</li><li><strong>Agente:</strong> resuelve 98 % de 40 tareas (simulado; un RAG sin herramientas, 18 %). Con lenguaje libre del cliente, la cobertura del planificador es el riesgo principal.</li></ul>
+  
+</div></section>
+<section class="sec" id="limites" aria-labelledby="t-limites"><div class="wrap">
+  <div class="sec-cab"><p class="kicker">04 · Límites declarados</p><h2 id="t-limites">Lo que no prometemos</h2></div>
+  <ul class="limites"><li>La calidad depende de la calidad y vigencia de los documentos.</li><li>Las métricas de la demo vienen de un corpus sintético más limpio que el real; en cada cliente se re-miden con su set de preguntas.</li><li>Sin llave no hay embeddings neuronales, cross-encoder ni NLI: se usan alternativas ligeras declaradas, y el juez de fidelidad es local (más débil que un LLM).</li><li>La aprobación humana del agente está simulada en la demo; en producción la da una persona.</li><li>No se ofrece asesoría legal o médica automatizada.</li></ul>
+</div></section>
+<section class="sec" id="aplicaciones" aria-labelledby="t-apl"><div class="wrap">
+  <div class="sec-cab"><p class="kicker">05 · Aplicaciones de negocio</p><h2 id="t-apl">Qué decisiones habilita un asistente con fuentes</h2><p>Ejemplos de decisiones que este servicio ayuda a tomar; el alcance se define en el diagnóstico.</p></div>
+  <div class="apl-rejilla"><article class="apl"><p class="apl-area">Servicio al cliente</p><h3>¿Por qué soporte tarda tanto en contestar dudas de política?</h3><p>Un asistente busca en tus manuales con recuperación híbrida y responde citando documento y párrafo.</p><p class="apl-dec"><span aria-hidden="true">→</span> Definir qué consultas resuelve el asistente y cuáles escalan.</p></article><article class="apl"><p class="apl-area">Ventas</p><h3>¿El equipo comercial cotiza con las condiciones vigentes?</h3><p>Filtramos por versión vigente y fecha para que el asistente no mezcle tarifas ni políticas viejas.</p><p class="apl-dec"><span aria-hidden="true">→</span> Liberar el asistente al equipo comercial con fuentes trazables.</p></article><article class="apl"><p class="apl-area">Marketing</p><h3>¿Esta pieza respeta la guía de marca y los mensajes aprobados?</h3><p>El asistente contrasta el borrador con la guía, cita la regla aplicable y dice «no sé» si no está.</p><p class="apl-dec"><span aria-hidden="true">→</span> Aprobar o devolver piezas con la regla citada.</p></article><article class="apl"><p class="apl-area">Operación y costos</p><h3>¿Podemos automatizar tickets sin perder el control?</h3><p>Un agente con herramientas propone crear o cerrar tickets; cada acción con efecto pide aprobación.</p><p class="apl-dec"><span aria-hidden="true">→</span> Elegir qué acciones se automatizan y cuáles quedan con aprobación.</p></article><article class="apl"><p class="apl-area">Riesgo y cumplimiento</p><h3>¿Qué cambió en la normativa que nos aplica?</h3><p>Búsqueda semántica en boletines y normas con filtros por fecha y tipo, y guardrails contra inyección.</p><p class="apl-dec"><span aria-hidden="true">→</span> Priorizar qué cambios normativos revisa legal esta semana.</p></article><article class="apl"><p class="apl-area">Dirección y estrategia</p><h3>¿Este piloto de chatbot está listo para producción?</h3><p>Lo medimos con preguntas reales de tu equipo: recall@k, fidelidad de citas y abstención correcta.</p><p class="apl-dec"><span aria-hidden="true">→</span> Escalar, corregir o detener el piloto con evidencia medida.</p></article></div>
+</div></section>
+<section class="sec" id="paquetes" aria-labelledby="t-paquetes"><div class="wrap">
+  <div class="sec-cab"><p class="kicker">06 · Paquetes</p><h2 id="t-paquetes">Tres formas de empezar</h2></div>
+  <div class="paquetes"><article class="paq"><span class="n">Nº 01</span><h3>Básico</h3><p>Asistente RAG sobre hasta 200 documentos, citas, abstención, set de evaluación de 100 preguntas y ficha de evaluación.</p><p class="dur">Duración típica: 3 semanas</p></article><article class="paq dest"><span class="n">Nº 02</span><h3>Pro</h3><p>Recuperación híbrida con re-ranking, filtros por versión y permisos, agente con 3 a 5 herramientas de solo lectura y trazas, guardrails e interfaz web.</p><p class="dur">Duración típica: 5 a 6 semanas</p></article><article class="paq"><span class="n">Nº 03</span><h3>Enterprise</h3><p>Agentes con acciones (tickets, correos, registros) bajo aprobación humana, integración con sistemas internos, monitoreo y re-evaluación continua, despliegue en la nube del cliente.</p><p class="dur">Duración típica: 8 a 12 semanas + soporte</p></article></div>
+  <p class="nota-precios">Sin precios publicados: cada propuesta se cotiza tras un diagnóstico de alcance.</p>
+</div></section>
+<section class="sec" id="preguntas" aria-labelledby="t-faq"><div class="wrap">
+  <div class="sec-cab"><p class="kicker">07 · Preguntas frecuentes</p><h2 id="t-faq">Lo que suelen preguntar</h2></div>
+  <div class="faq"><details><summary>¿Va a inventar respuestas?</summary><p>Puede pasar; por eso se mide la fidelidad, se cita la fuente y se calibra la abstención.</p></details><details><summary>¿Mis documentos se usan para entrenar al proveedor?</summary><p>Se configura con proveedores que no entrenan con datos de API, o con modelos locales.</p></details><details><summary>¿Respeta permisos?</summary><p>La recuperación se filtra por el perfil del usuario.</p></details><details><summary>¿El agente puede hacer cosas solo?</summary><p>Solo acciones de lectura sin aprobación; cualquier acción con efecto pide confirmación humana.</p></details></div>
+</div></section>
+<section class="sec" id="descarga" aria-labelledby="t-descarga"><div class="wrap">
+  <div class="sec-cab"><p class="kicker">08 · Descarga</p><h2 id="t-descarga">Llévate la demo</h2></div>
+  <div class="descarga"><p><strong>Presentación de la demo (PDF, 2.1 MB).</strong> El caso completo: problema, método, resultados contra criterio y límites declarados.</p><a class="btn btn-1" href="../assets/pdf/07_chatbots_rag_agentes_demo.pdf" download>Descargar PDF</a></div>
+</div></section>
+<section class="sec" aria-labelledby="t-cta"><div class="wrap">
+  <div class="contacto"><p class="kicker">Siguiente paso</p><h2 id="t-cta">¿Lo medimos con tus datos?</h2>
+  <p>En una llamada de 30 minutos revisamos si se puede, cómo lo mediríamos y qué no te podemos prometer.</p>
+  <div class="btns"><a class="btn btn-1" href="mailto:avm.48p1@gmail.com?subject=Diagn%C3%B3stico%20de%20datos">Agenda un diagnóstico</a><a class="btn btn-2" href="../index.html#servicios">Ver otros servicios</a></div></div>
+  <p class="kicker" style="margin-top:40px">Otros servicios</p>
+  <ul class="otros"><li><a href="01-social-listening.html">Nº 01 · Escucha digital</a></li><li><a href="02-forecasting.html">Nº 02 · Pronósticos</a></li><li><a href="03-causalidad.html">Nº 03 · Impacto de campañas</a></li><li><a href="04-comunidades.html">Nº 04 · Comunidades</a></li><li><a href="05-etl.html">Nº 05 · ETL y BI</a></li><li><a href="06-automatizacion-ia.html">Nº 06 · Automatización con IA</a></li><li><a href="08-ml-dl-medida.html">Nº 08 · Modelos a medida</a></li><li><a href="09-auditoria-rescate.html">Nº 09 · Auditoría y rescate</a></li><li><a href="10-formacion.html">Nº 10 · Formación</a></li></ul>
+</div></section>
+</main>
+<footer class="pie">
+<div class="wrap">
+  <div><img src="../assets/logo/isotipo.svg" alt="" width="28" height="28" class="logo-cla"><img src="../assets/logo/isotipo_oscuro.svg" alt="" width="28" height="28" class="logo-osc">
+    <p style="margin-top:12px"><strong>AI Way</strong> · ciencia de datos con rigor de físico.</p>
+    <p class="apagado">Validación honesta, límites declarados y cifras que resisten una auditoría.</p></div>
+  <div><p class="kicker">Servicios</p><ul><li><a href="../servicios/01-social-listening.html">Escucha digital</a></li><li><a href="../servicios/02-forecasting.html">Pronósticos</a></li><li><a href="../servicios/03-causalidad.html">Impacto de campañas</a></li><li><a href="../servicios/04-comunidades.html">Comunidades</a></li><li><a href="../servicios/05-etl.html">ETL y BI</a></li><li><a href="../servicios/06-automatizacion-ia.html">Automatización con IA</a></li><li><a href="../servicios/07-chatbots-rag-agentes.html">RAG y agentes</a></li><li><a href="../servicios/08-ml-dl-medida.html">Modelos a medida</a></li><li><a href="../servicios/09-auditoria-rescate.html">Auditoría y rescate</a></li><li><a href="../servicios/10-formacion.html">Formación</a></li></ul></div>
+  <div><p class="kicker">Sitio</p><ul><li><a href="../index.html#casos">Casos</a></li><li><a href="../index.html#metodo">Método</a></li><li><a href="../laboratorio.html">Laboratorio</a></li><li><a href="../index.html#sobre-mi">Sobre mí</a></li><li><a href="../index.html#contacto">Contacto</a></li><li><a href="mailto:avm.48p1@gmail.com">avm.48p1@gmail.com</a></li><li><a href="https://www.linkedin.com/in/andrés-vázquez-macías-727278242" rel="me noopener">LinkedIn</a></li><li><a href="https://github.com/AndresVAMA" rel="me noopener">GitHub</a></li></ul></div>
+  <p class="legal">© 2026 AI Way · Andrés Vázquez Macías · Ciudad de México. Las demos usan datos ilustrativos (sintéticos) y empresas ficticias; los casos reales se describen por ramo, sin nombres de clientes.</p>
+</div>
+</footer>
+<script src="../assets/js/site.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,170 @@
+/* Copia de diseno/tokens.css sin @import: las fuentes se cargan en el <head>. */
+/* AI Way · tokens de diseño (Física elegante) · generado por diseno/_build/build_marca.py
+   Claro por defecto. Oscuro con prefers-color-scheme o <html data-theme="dark">;
+   <html data-theme="light"> fuerza claro aunque el sistema esté en oscuro. */
+:root {
+  color-scheme: light;
+  --aw-font-serif: 'IBM Plex Serif', Georgia, serif;
+  --aw-font-sans: 'IBM Plex Sans', system-ui, sans-serif;
+  --aw-font-mono: 'IBM Plex Mono', ui-monospace, monospace;
+  --aw-text-display: 3.5rem;
+  --aw-text-h1: 2.5rem;
+  --aw-text-h2: 1.75rem;
+  --aw-text-h3: 1.25rem;
+  --aw-text-cuerpo: 1.0625rem;
+  --aw-text-pequeno: 0.875rem;
+  --aw-text-nota: 0.75rem;
+  --aw-space-1: 4px;
+  --aw-space-2: 8px;
+  --aw-space-3: 12px;
+  --aw-space-4: 16px;
+  --aw-space-5: 24px;
+  --aw-space-6: 32px;
+  --aw-space-7: 48px;
+  --aw-space-8: 64px;
+  --aw-space-9: 96px;
+  --aw-radius-fino: 2px;
+  --aw-radius-medio: 4px;
+  --aw-radius-tarjeta: 6px;
+  --aw-radius-pildora: 999px;
+  --aw-brand-azul-profundo: #0b1b3f;
+  --aw-brand-azul-tinta: #14285a;
+  --aw-brand-crema: #f6f0e3;
+  --aw-brand-crema-2: #ece3d0;
+  --aw-brand-cobre: #b5562c;
+  --aw-brand-cobre-claro: #e59a72;
+  --aw-fondo: #f6f0e3;
+  --aw-superficie: #fbf7ee;
+  --aw-elevado: #fffdf8;
+  --aw-tinta: #0b1b3f;
+  --aw-tinta-2: #3d4a63;
+  --aw-apagado: #5d6678;
+  --aw-reticula: #e6dfcf;
+  --aw-eje: #bfb59f;
+  --aw-borde: #d9cfb9;
+  --aw-acento: #b5562c;
+  --aw-acento-texto: #9a4520;
+  --aw-invertido-fondo: #0b1b3f;
+  --aw-invertido-tinta: #f3ecdd;
+  --aw-serie-1: #2a5fb7;
+  --aw-serie-2: #258865;
+  --aw-serie-3: #c3972a;
+  --aw-serie-4: #8b4486;
+  --aw-serie-5: #c26030;
+  --aw-serie-6: #1896ad;
+  --aw-seq-1: #e0ecff;
+  --aw-seq-2: #b5cdf3;
+  --aw-seq-3: #8daee4;
+  --aw-seq-4: #678fd1;
+  --aw-seq-5: #4671ba;
+  --aw-seq-6: #28549e;
+  --aw-seq-7: #0b3880;
+  --aw-div-1: #0145a7;
+  --aw-div-2: #5282d1;
+  --aw-div-3: #9bbffa;
+  --aw-div-4: #e9e2d2;
+  --aw-div-5: #f1ab8b;
+  --aw-div-6: #c2663a;
+  --aw-div-7: #803200;
+  --aw-neutro: #8a8f9c;
+  --aw-bien: #1d6b4f;
+  --aw-alerta: #8c5a00;
+  --aw-mal: #a8322d;
+  --aw-verdad-simulador: #0b1b3f;
+  --aw-simulado: #9a4520;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
+    --aw-fondo: #0b1b3f;
+    --aw-superficie: #0f1a2e;
+    --aw-elevado: #16233d;
+    --aw-tinta: #f3ecdd;
+    --aw-tinta-2: #c4c9d4;
+    --aw-apagado: #9aa3b5;
+    --aw-reticula: #1f2c45;
+    --aw-eje: #34425e;
+    --aw-borde: #2a3a5c;
+    --aw-acento: #e59a72;
+    --aw-acento-texto: #e59a72;
+    --aw-invertido-fondo: #f6f0e3;
+    --aw-invertido-tinta: #0b1b3f;
+    --aw-serie-1: #5c8cda;
+    --aw-serie-2: #329f78;
+    --aw-serie-3: #b48a1f;
+    --aw-serie-4: #b167ab;
+    --aw-serie-5: #d2764a;
+    --aw-serie-6: #0389a0;
+    --aw-seq-1: #1a2941;
+    --aw-seq-2: #2d4266;
+    --aw-seq-3: #415e8d;
+    --aw-seq-4: #587bb4;
+    --aw-seq-5: #7199da;
+    --aw-seq-6: #8eb8fe;
+    --aw-seq-7: #c2d9ff;
+    --aw-div-1: #adccfe;
+    --aw-div-2: #6d99e0;
+    --aw-div-3: #4d6998;
+    --aw-div-4: #2a3550;
+    --aw-div-5: #905940;
+    --aw-div-6: #d38059;
+    --aw-div-7: #ffb798;
+    --aw-neutro: #6b7486;
+    --aw-bien: #5cc79a;
+    --aw-alerta: #e8b04a;
+    --aw-mal: #f07a6e;
+    --aw-verdad-simulador: #f3ecdd;
+    --aw-simulado: #e59a72;
+  }
+}
+
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --aw-fondo: #0b1b3f;
+  --aw-superficie: #0f1a2e;
+  --aw-elevado: #16233d;
+  --aw-tinta: #f3ecdd;
+  --aw-tinta-2: #c4c9d4;
+  --aw-apagado: #9aa3b5;
+  --aw-reticula: #1f2c45;
+  --aw-eje: #34425e;
+  --aw-borde: #2a3a5c;
+  --aw-acento: #e59a72;
+  --aw-acento-texto: #e59a72;
+  --aw-invertido-fondo: #f6f0e3;
+  --aw-invertido-tinta: #0b1b3f;
+  --aw-serie-1: #5c8cda;
+  --aw-serie-2: #329f78;
+  --aw-serie-3: #b48a1f;
+  --aw-serie-4: #b167ab;
+  --aw-serie-5: #d2764a;
+  --aw-serie-6: #0389a0;
+  --aw-seq-1: #1a2941;
+  --aw-seq-2: #2d4266;
+  --aw-seq-3: #415e8d;
+  --aw-seq-4: #587bb4;
+  --aw-seq-5: #7199da;
+  --aw-seq-6: #8eb8fe;
+  --aw-seq-7: #c2d9ff;
+  --aw-div-1: #adccfe;
+  --aw-div-2: #6d99e0;
+  --aw-div-3: #4d6998;
+  --aw-div-4: #2a3550;
+  --aw-div-5: #905940;
+  --aw-div-6: #d38059;
+  --aw-div-7: #ffb798;
+  --aw-neutro: #6b7486;
+  --aw-bien: #5cc79a;
+  --aw-alerta: #e8b04a;
+  --aw-mal: #f07a6e;
+  --aw-verdad-simulador: #f3ecdd;
+  --aw-simulado: #e59a72;
+}
+
+/* Base mínima opcional */
+.aw-base { background: var(--aw-fondo); color: var(--aw-tinta); font-family: var(--aw-font-sans);
+  font-size: var(--aw-text-cuerpo); line-height: 1.5; }
+.aw-base h1, .aw-base h2, .aw-base h3 { font-family: var(--aw-font-serif); font-weight: 500; line-height: 1.1; }
+.aw-base code, .aw-kicker { font-family: var(--aw-font-mono); }
+.aw-kicker { color: var(--aw-acento-texto); font-size: var(--aw-text-pequeno); letter-spacing: .04em; }
