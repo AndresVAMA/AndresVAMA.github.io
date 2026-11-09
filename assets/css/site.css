@@ -160,7 +160,15 @@ code { font-family: var(--aw-font-mono); font-size: .9em; background: var(--aw-s
 .cred { list-style: none; padding: 0; margin: 16px 0 0; font-size: .9375rem; }
 .cred li { padding: 6px 0; border-top: 1px solid var(--aw-reticula); }
 .cred b { font-family: var(--aw-font-mono); font-weight: 500; font-size: .75rem; color: var(--aw-apagado); text-transform: uppercase; letter-spacing: .05em; margin-right: 8px; }
-@media (max-width: 640px) { .sobre { grid-template-columns: 1fr; } .sobre figure img { max-width: 160px; } }
+.cred-det { margin-top: 6px; }
+.cred-det summary { cursor: pointer; color: var(--aw-acento-texto); font-size: .875rem; width: fit-content; }
+.cred-grupos { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px 28px; margin-top: 14px; }
+.cred-area { font-family: var(--aw-font-mono); font-size: .75rem; color: var(--aw-apagado); text-transform: uppercase; letter-spacing: .05em; margin: 0 0 6px; }
+.cred-grupos ul { list-style: none; padding: 0; margin: 0; }
+.cred .cred-grupos li { border: 0; padding: 3px 0; font-size: .875rem; line-height: 1.4; color: var(--aw-tinta); }
+.cred-grupos li span { color: var(--aw-apagado); font-size: .8125rem; }
+.cred-todas { margin: 14px 0 4px; font-size: .875rem; }
+@media (max-width: 640px) { .sobre { grid-template-columns: 1fr; } .sobre figure img { max-width: 160px; } .cred-grupos { grid-template-columns: 1fr; } }
 
 /* ---------- Contacto ---------- */
 .contacto { background: var(--aw-invertido-fondo); color: var(--aw-invertido-tinta); border-radius: var(--aw-radius-tarjeta); padding: clamp(28px, 6vw, 64px); }
